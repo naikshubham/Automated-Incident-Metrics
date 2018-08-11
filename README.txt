@@ -1,0 +1,1 @@
+This is an automated script for sending Incident Metrics mail.
