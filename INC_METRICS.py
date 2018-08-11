@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # In[124]:
@@ -80,10 +79,8 @@ TO_ADD = [TO] + CC + BCC
 SUBJECT = "Incident metrics for PSR data"
 TEXT = '''
 Hi Arbazuddin,
-
 1.Total Ticket: {}
 2.SLA Misses: {:.2f} %
-
 Incident Metrics 
 o    Number of tickets per person Offshore: 2
 o    Number of tickets per person Onsite: 1   
@@ -96,8 +93,6 @@ o    Sev 3 : {}
 o    Sev 4 : {}
 o    Sev 5 : {}
 o    Sev 6 : {}
-
-
 Thanks,
 {}|GMS
 '''.format(total_tickets,sla_miss,sla_missed,sev1,sev2,sev3,sev4,sev5,sev6,name)
@@ -118,4 +113,5 @@ import smtplib
 server = smtplib.SMTP(SERVER,587)
 server.sendmail(FROM, TO,message)
 server.quit()
+
 
