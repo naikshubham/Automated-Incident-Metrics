@@ -63,7 +63,7 @@ except KeyError:
 # In[129]:
 
 
-SERVER = "cas2.syntelorg.com"
+SERVER = "XXXX.XXXXXorg.com"
 FROM = input("Enter Sender email address:")
 name = FROM.split('_')[0]
 #FROM = "Shubham_Naik@Syntelinc.com"
